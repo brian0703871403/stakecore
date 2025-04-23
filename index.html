@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StakeCore</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">StakeCore</div>
+  <header class="navbar">
+    <div class="brand">✔ StakeCore</div>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>Sports</li>
-        <li>Games</li>
-        <li>Login</li>
-      </ul>
+      <a href="#">Sports</a>
+      <a href="#">Live</a>
+      <a href="#">Promotions</a>
     </nav>
+    <div class="actions">
+      <button class="login">Log In</button>
+      <button class="join">Join</button>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to StakeCore</h1>
-    <p>Your game, your way.</p>
-    <button>Join Now</button>
-  </section>
-
   <section class="promotions">
-    <h2>Promotions</h2>
-    <div class="promos">
-      <div class="promo">
-        <img src="https://i.imgur.com/B6Twn4N.png" alt="Promo 1">
-        <p>100% Bonus</p>
-      </div>
-      <div class="promo">
-        <img src="https://i.imgur.com/QmXRQPC.png" alt="Promo 2">
-        <p>Free Bet</p>
-      </div>
-      <div class="promo">
-        <img src="https://i.imgur.com/50IQYLM.png" alt="Promo 3">
-        <p>Cashback</p>
-      </div>
+    <div class="promo-carousel">
+      <div class="promo active">First Deposit Bonus – 100% up to $200</div>
+      <div class="promo">Bet & Get – Bet $50 Get $10 Free Bet</div>
+      <div class="promo">Accumulator +50% Acca Boost</div>
     </div>
   </section>
 
-  <section class="matches">
-    <h2>Top Matches</h2>
-    <ul>
-      <li>Man City vs Arsenal - 2.30 | 3.20 | 1.90</li>
-      <li>Real Madrid vs PSG - 2.10 | 3.10 | 2.00</li>
-    </ul>
-  </section>
-
-  <section class="games">
-    <h2>Available Games</h2>
-    <ul>
-      <li>Aviator</li>
-      <li>Dice Roll</li>
-      <li>Spin the Wheel</li>
-    </ul>
-  </section>
-  <script src="app.js"></script>
+  <main class="games">
+    <h2>Top Games</h2>
+    <div class="match-day">April 30</div>
+    <table class="games-table">
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>1</th>
+        <th>X</th>
+        <th>2</th>
+      </tr>
+      <tr>
+        <td>17:00</td>
+        <td>Girona<br>Villarreal</td>
+        <td>1.78</td>
+        <td>4.20</td>
+        <td>4.10</td>
+      </tr>
+      <tr>
+        <td>19:00</td>
+        <td>Real Madrid<br>Bayern Munich</td>
+        <td>1.98</td>
+        <td>4.20</td>
+        <td>3.55</td>
+      </tr>
+      <tr>
+        <td>19:35</td>
+        <td>Melbourne Victory<br>Melbourne City</td>
+        <td>2.90</td>
+        <td>3.60</td>
+        <td>2.32</td>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td>Espanyol<br>Cartagena</td>
+        <td>1.80</td>
+        <td>3.60</td>
+        <td>4.70</td>
+      </tr>
+    </table>
+  </main>
 </body>
 </html>
