@@ -98,9 +98,10 @@ nav ul li:hover {
   background: #144;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 150px;
+  min-width: 180px;
   text-align: center;
   flex-shrink: 0;
+  box-shadow: 0 0 10px #0f4;
 }
 
 .promo img {
