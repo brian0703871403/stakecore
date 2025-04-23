@@ -1,14 +1,14 @@
-/* Global Reset */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
   background: linear-gradient(to bottom right, #001d0f, #021b12);
   color: white;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   padding: 0 1rem;
 }
@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #0f4;
   background-color: rgba(0, 20, 10, 0.9);
 }
@@ -53,6 +53,7 @@ nav ul li:hover {
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 700px;
+  box-shadow: 0 0 10px #0f4;
 }
 
 .hero h1 {
@@ -63,7 +64,6 @@ nav ul li:hover {
 
 .hero p {
   color: #ccc;
-  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -84,8 +84,8 @@ nav ul li:hover {
 
 /* Promotions */
 .promotions {
-  max-width: 1000px;
-  margin: 3rem auto;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
 .promotions h2 {
@@ -97,41 +97,39 @@ nav ul li:hover {
 .promos {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1rem;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 
 .promo {
   background: #144;
   padding: 1rem;
   border-radius: 10px;
-  width: 200px;
+  min-width: 180px;
   text-align: center;
+  flex-shrink: 0;
   box-shadow: 0 0 10px #0f4;
 }
 
 .promo img {
   width: 100%;
-  height: 120px;
-  object-fit: cover;
+  max-width: 120px;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 0.5rem;
-}
-
-.promo p {
-  color: #eee;
-  font-weight: bold;
+  object-fit: cover;
 }
 
 /* Matches */
 .matches {
   max-width: 700px;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .matches h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -141,33 +139,29 @@ nav ul li:hover {
 }
 
 .matches li {
-  padding: 0.7rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #0f4;
-  background-color: rgba(10, 30, 10, 0.3);
-  margin-bottom: 0.3rem;
-  border-radius: 5px;
   text-align: center;
 }
 
-/* Games Section */
+/* Games */
 .games {
   max-width: 700px;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .games h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .games ul {
   list-style: none;
+  padding: 0;
   text-align: center;
 }
 
 .games li {
-  padding: 0.5rem 0;
-  border-bottom: 1px dashed #0f4;
-  color: #bfffbf;
+  padding: 0.4rem 0;
 }
