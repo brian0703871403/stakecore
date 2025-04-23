@@ -2,48 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StakeCore - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StakeCore</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>StakeCore</h1>
+    <div class="logo">StakeCore</div>
     <nav>
-      <a href="#">Home</a> |
-      <a href="#">Sports</a> |
-      <a href="#">Games</a>
+      <ul>
+        <li>Home</li>
+        <li>Sports</li>
+        <li>Games</li>
+        <li>Login</li>
+      </ul>
     </nav>
   </header>
 
-  <section class="promos">
+  <section class="hero">
+    <h1>Welcome to StakeCore</h1>
+    <p>Real betting thrills, fake balance chills.</p>
+    <button>Join Now</button>
+  </section>
+
+  <section class="promotions">
     <h2>Promotions</h2>
-    <div class="promo-slider">
-      <img src="https://via.placeholder.com/200x100?text=Promo+1" alt="Promo 1" />
-      <img src="https://via.placeholder.com/200x100?text=Promo+2" alt="Promo 2" />
-      <img src="https://via.placeholder.com/200x100?text=Promo+3" alt="Promo 3" />
+    <div class="promos">
+      <div class="promo"><img src="https://via.placeholder.com/150" alt="Promo 1"><p>100% Bonus</p></div>
+      <div class="promo"><img src="https://via.placeholder.com/150" alt="Promo 2"><p>Free Bet</p></div>
+      <div class="promo"><img src="https://via.placeholder.com/150" alt="Promo 3"><p>Cashback</p></div>
     </div>
   </section>
 
   <section class="matches">
-    <h2>Today's Matches</h2>
+    <h2>Top Matches</h2>
     <ul>
-      <li>Man City vs Arsenal - 2.30 | 3.20 | 1.90</li>
-      <li>Real Madrid vs PSG - 2.10 | 3.10 | 2.00</li>
+      <li>Arsenal vs Man City - 2.10 | 3.30 | 2.40</li>
+      <li>PSG vs Bayern - 2.00 | 3.50 | 2.60</li>
     </ul>
   </section>
 
   <section class="games">
-    <h2>Available Games</h2>
+    <h2>Mini Games</h2>
     <ul>
       <li>Aviator</li>
-      <li>Dice Roll</li>
       <li>Spin the Wheel</li>
+      <li>Dice</li>
     </ul>
   </section>
 
-  <footer>
-    <p>© 2025 StakeCore. All rights reserved.</p>
-  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
