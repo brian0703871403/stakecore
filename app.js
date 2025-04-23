@@ -1,0 +1,1 @@
+console.log('StakeCore fully loaded');
