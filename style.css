@@ -1,34 +1,147 @@
-body {
+/* Global Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0f0a;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+  background: linear-gradient(to bottom right, #001d0f, #021b12);
+  color: white;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
 header {
-  background: #1a3f1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #0f4;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0f4;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #66ff99;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #062c1c;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #0f4;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero button {
+  background: #0f4;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #4f8;
+}
+
+/* Promotions */
+.promotions {
+  margin: 2rem 0;
+}
+
+.promotions h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.promos {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.promo {
+  background: #144;
   padding: 1rem;
+  border-radius: 10px;
+  min-width: 150px;
   text-align: center;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: #fff;
-  text-decoration: none;
+.promo img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
-section {
-  padding: 2rem;
+/* Matches */
+.matches {
+  margin: 2rem 0;
 }
 
-.promo-slider img {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
+.matches h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-footer {
-  background: #123412;
-  text-align: center;
-  padding: 1rem;
+.matches ul {
+  list-style: none;
+}
+
+.matches li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #0f4;
+}
+
+/* Games */
+.games {
+  margin: 2rem 0;
+}
+
+.games h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.games ul {
+  list-style: none;
+}
+
+.games li {
+  padding: 0.4rem 0;
 }
