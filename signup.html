@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Golden Bets</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // In a real implementation, this would be a comprehensive list.
+        const countryCodes = {
+            "254": "Kenya",
+            "1": "United States",
+            "44": "United Kingdom",
+            "234": "Nigeria"
+        };
+
+        function updateCountry() {
+            const countryCodeSelect = document.getElementById("countryCode");
+            const countryInput = document.getElementById("country");
+            const selectedCode = countryCodeSelect.value;
+            countryInput.value = countryCodes[selectedCode] || ""; // Update country based on code
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Golden Bets</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="account.html">My Account</a></li>
+                 <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <div class="form-wrapper">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                 <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <div class="phone-input-group">
+                        <select id="countryCode" name="countryCode" onchange="updateCountry()">
+                            <option value="254">Kenya (+254)</option>
+                            <option value="1">United States (+1)</option>
+                            <option value="44">United Kingdom (+44)</option>
+                             <option value="234">Nigeria (+234)</option>
+                            </select>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" readonly>
+                </div>
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Golden Bets. All rights reserved.</p>
+    </footer>
+</body>
+</html>
